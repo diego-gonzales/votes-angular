@@ -1,0 +1,25 @@
+<div class="card text-center mb-4">
+    <div class="card-header fw-bold">
+        {{vote.title}}
+    </div>
+    <div class="card-body">
+        <p class="card-title">Points</p>
+        <p class="fs-1 fw-bold">{{vote.points}}</p>
+    </div>
+    <div class="card-footer text-muted">
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-primary"
+                    type="button"
+                    (click)="up()">
+                Up
+                <i class="fas fa-thumbs-up"></i>
+            </button>
+            <button class="btn btn-danger"
+                    type="button"
+                    (click)="down()">
+                Down
+                <i class="fas fa-thumbs-down"></i>
+            </button>
+        </div>
+    </div>
+</div>
